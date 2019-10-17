@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    margin: 0;
+    color: #333333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1278px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding-top: 1%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+li a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: serif, sans-serif;
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#banner {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    padding-left: 70px;
+}
+
+#banner img {
+    width: 100%;
+    max-width: 1278px;
+}
+
+.banner-text {
+    color: white;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.intro-text h2 {
+    margin: 0;
+}
+
+#banner p {
+    font-size: 25px;
+    margin: 0;
+}
+
+#main-block {
+    background-color: #ededed;
+}
+
+.img-container,
+.intro-text {
+    width: 96%;
+    margin: 0 auto;
+    padding-left: 5%;
+}
+
+.intro-text h2,
+.intro-text p {
+    padding-left: 3%;
+}
+
+.img-wrapper {
+    float: left;
+    width: 31%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+.col1,
+.col2,
+.col3 {
+    padding-left: 3%;
+}
+
+#newyork,
+#paris {
+    padding-top: 8.3333333%;
+}
+
+#footer {
+    background-color: #F3F3F3;
+}
+
+.footer-block {
+    width: 96%;
+    margin: 0 auto;
+    padding-left: 5%;
+}
+
+.footer-block div {
+    float: left;
+    width: 32%;
+    padding-bottom: 5%;
+}
+
+a {
+    color: #4cb0b1;
+    padding: .5em 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    #banner {
+        background-image: none;
+        height: auto;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .banner-text {
+        color: black;
+        padding-bottom: 20px;
+    }
+    .banner-text h1 {
+        font-size: 25px;
+    }
+    .banner-text p {
+        font-size: 20px !important;
+    }
+    .img-wrapper {
+        width: 100%;
+    }
+    .col1,
+    .col2,
+    .col3 {
+        padding-left: 0;
+    }
+    .img-container,
+    .intro-text {
+        width: 100%;
+        padding: 5px;
+    }
+    #newyork,
+    #paris {
+        padding-top: 5px;
+    }
+    .img-wrapper {
+        padding-bottom: 0;
+    }
+    .menu-wrapper {
+        width: 100%;
+    }
+    ul {
+        background-color: #556270;
+        height: 40px;
+    }
+    li a {
+        color: #FFFFFF;
+    }
+    .footer-block div {
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #main-block {
+        background-color: white;
+    }
+    li a {
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .intro-text h2 {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    .banner-text {
+        color: black;
+    }
+    #banner {
+        background-image: none;
+        padding-top: 10px;
+        padding-left: 15px;
+        height: auto;
+    }
+    .banner-text {
+        padding-bottom: 30px;
+    }
+    .img-wrapper {
+        width: 50%;
+    }
+    .footer-block div {
+        width: 100%;
+    }
+}
